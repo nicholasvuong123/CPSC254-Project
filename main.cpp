@@ -13,7 +13,7 @@ void reading_function()
     string string;
     ifstream readfile;
     readfile.open("README.md");
-    while(!infile.eof)
+    while(!readfile.eof())
     {
         getline(readfile, string);
         cout << string;
