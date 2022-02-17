@@ -3,9 +3,13 @@
 // :)*/
 
 #include <iostream>
+#include <fstream>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "HI";
+    ifstream(file, "README.md");
+    file.getline();
     return 0;
 }
