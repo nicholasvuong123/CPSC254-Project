@@ -4,12 +4,25 @@
 
 #include <iostream>
 #include <fstream>
+#include "function.h"
 
 using namespace std;
 
+void reading_function()
+{
+    string string;
+    ifstream readfile;
+    readfile.open("README.md");
+    while(!infile.eof)
+    {
+        getline(readfile, string);
+        cout << string;
+    }
+    readfile.close();
+}
+
 int main()
 {
-    ifstream(file, "README.md");
-    file.getline();
+    reading_function();
     return 0;
 }
